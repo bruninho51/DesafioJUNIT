@@ -36,4 +36,14 @@ public class Teste {
 	}
 
 }
- 
+
+ERRO 1:
+
+java.lang.Error: Unresolved compilation problem: 
+	The method calculaPena(Resposta, Resposta) from the type JulgamentoPrisioneiro refers to the missing type Resposta
+
+No caso de teste é passado duas strings para o método calcularPena da classe JulgamentoPrisioneiro, como foi especificado no algoritimo. Porém na implementação, o programador colocou como parâmetro dois objetos da classe Resposta, não obedecendo a especificação passada pelo analista, causando erro de tipo no programa.
+Corrigindo a classe Java, o método calcularPena ficará da seguinte forma:
+
+public int calculaPena(String respostaPrisioneiroA, String respostaPrisioneiroB)
+
