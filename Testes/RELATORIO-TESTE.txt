@@ -141,4 +141,11 @@ if (respostaPrisioneiroB.equals("Culpado")) {
 	return PENA_CONDENACAO_INDIVIDUAL;
 }
 
+Erro 10:
 
+Teste condenacaoIndividual
+java.lang.AssertionError: expected:<10> but was:<0>
+
+Alteração do valor da constante PENA_CONDENACAO_INDIVIDUAL, de 0 para 10. Segue o código:
+
+private int PENA_CONDENACAO_INDIVIDUAL = 10;
