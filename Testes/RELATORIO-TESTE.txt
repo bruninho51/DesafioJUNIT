@@ -84,3 +84,15 @@ java.lang.Error: Unresolved compilation problem:
 Objeto Resposta não existe na linha 15. Segue a correção:
 
 if (respostaPrisioneiroB == "Culpado") {
+
+Erro 5:
+
+Teste condenacaoMutua
+java.lang.AssertionError: expected:<5> but was:<15>
+
+Endereço de memória estava sendo comparado em vez das strings. Segue correção:
+
+if (respostaPrisioneiroA.equals("Culpado")) {
+	if (respostaPrisioneiroB.equals("Culpado")) {
+		return PENA_CONDENACAO_MUTUA;
+
