@@ -56,7 +56,18 @@ java.lang.Error: Unresolved compilation problems:
 	at JulgamentoPrisioneiro.calculaPena(JulgamentoPrisioneiro.java:8)
 	at Teste.condenacaoMutua(Teste.java:10)
 
-Varíavel Resposta não existe na linha 8. Segue a correção:
+Objeto Resposta não existe na linha 8. Segue a correção:
 
 if (respostaPrisioneiroA == "Culpado") {
+
+java.lang.Error: Unresolved compilation problems: 
+	Resposta cannot be resolved to a variable
+	Resposta cannot be resolved to a variable
+
+	at JulgamentoPrisioneiro.calculaPena(JulgamentoPrisioneiro.java:9)
+	at Teste.condenacaoMutua(Teste.java:10)
+
+Objeto Resposta não existe na linha 9. Segue a correção:
+
+if (respostaPrisioneiroB == "Culpado") {
 
