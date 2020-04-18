@@ -163,3 +163,13 @@ if (respostaPrisioneiroB.equals("Culpado")) {
 	return PENA_INOCENCIA;
 }
 
+Erro 12:
+
+Teste condenacaoCumplices
+java.lang.AssertionError: expected:<1> but was:<11>
+
+Alteração no valor da constante PENA_CONDENACAO_CUMPLICES, de 11 para 1. Segue o código:
+
+private int PENA_CONDENACAO_CUMPLICES = 1;
+
+
