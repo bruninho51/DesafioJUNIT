@@ -118,4 +118,12 @@ if (respostaPrisioneiroB.equals("Culpado")) {
 	return PENA_INOCENCIA;
 }
 
+Erro 8:
+
+Teste inocencia
+java.lang.AssertionError: expected:<0> but was:<11>
+
+Constante PENA_INOCENCIA estava com valor 10, quando deveria estar com valor 0. Segue o código alterado:
+
+private int PENA_INOCENCIA = 0;
 
