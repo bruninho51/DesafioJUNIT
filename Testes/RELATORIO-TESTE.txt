@@ -60,6 +60,8 @@ Objeto Resposta não existe na linha 8. Segue a correção:
 
 if (respostaPrisioneiroA == "Culpado") {
 
+Erro 3:
+
 java.lang.Error: Unresolved compilation problems: 
 	Resposta cannot be resolved to a variable
 	Resposta cannot be resolved to a variable
@@ -71,3 +73,14 @@ Objeto Resposta não existe na linha 9. Segue a correção:
 
 if (respostaPrisioneiroB == "Culpado") {
 
+Erro 4:
+
+java.lang.Error: Unresolved compilation problem: 
+	Resposta cannot be resolved to a variable
+
+	at JulgamentoPrisioneiro.calculaPena(JulgamentoPrisioneiro.java:15)
+	at Teste.condenacaoMutua(Teste.java:10)
+
+Objeto Resposta não existe na linha 15. Segue a correção:
+
+if (respostaPrisioneiroB == "Culpado") {
