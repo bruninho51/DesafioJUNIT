@@ -47,3 +47,16 @@ Corrigindo a classe Java, o método calcularPena ficará da seguinte forma:
 
 public int calculaPena(String respostaPrisioneiroA, String respostaPrisioneiroB)
 
+Erro 2:
+java.lang.Error: Unresolved compilation problems: 
+	Resposta cannot be resolved to a variable
+	Resposta cannot be resolved to a variable
+	Resposta cannot be resolved to a variable
+
+	at JulgamentoPrisioneiro.calculaPena(JulgamentoPrisioneiro.java:8)
+	at Teste.condenacaoMutua(Teste.java:10)
+
+Varíavel Resposta não existe na linha 8. Segue a correção:
+
+if (respostaPrisioneiroA == "Culpado") {
+
