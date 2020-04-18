@@ -1,0 +1,39 @@
+Nome: Bruno Mendes Pimenta
+RM: 81473
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class Teste {
+
+	@Test
+	public void condenacaoMutua() {
+		JulgamentoPrisioneiro jp = new JulgamentoPrisioneiro();
+		int res = jp.calculaPena("Culpado", "Culpado");
+		assertEquals(5, res);
+	}
+	
+	@Test
+	public void condenacaoIndividual() {
+		JulgamentoPrisioneiro jp = new JulgamentoPrisioneiro();
+		int res = jp.calculaPena("Culpado", "Inocente");
+		assertEquals(10, res);
+	}
+	
+	@Test
+	public void condenacaoCumplices() {
+		JulgamentoPrisioneiro jp = new JulgamentoPrisioneiro();
+		int res = jp.calculaPena("Inocente", "Culpado");
+		assertEquals(1, res);
+	}
+	
+	@Test
+	public void inocencia() {
+		JulgamentoPrisioneiro jp = new JulgamentoPrisioneiro();
+		int res = jp.calculaPena("Inocente", "Inocente");
+		assertEquals(0, res);
+	}
+
+}
+ 
