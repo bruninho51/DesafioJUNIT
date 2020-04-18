@@ -127,3 +127,18 @@ Constante PENA_INOCENCIA estava com valor 10, quando deveria estar com valor 0. 
 
 private int PENA_INOCENCIA = 0;
 
+
+Erro 9:
+
+Teste condenacaoIndividual
+java.lang.AssertionError: expected:<10> but was:<0>
+
+Alteração da constante na linha 12. Estava PENA_INOCENCIA, sendo que deveria estar PENA_CONDENACAO_INDIVIDUAL. Segue alteração no código:
+
+if (respostaPrisioneiroB.equals("Culpado")) {
+	return PENA_CONDENACAO_MUTUA;
+} else {
+	return PENA_CONDENACAO_INDIVIDUAL;
+}
+
+
